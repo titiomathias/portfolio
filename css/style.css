@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body#body {
+    background-color: #2a2a2a;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #2a2a2a, #2a2a2a);
+    padding: 2% 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scrolled {
+    background: linear-gradient(to bottom, black, #2a2a2a);
+    border-bottom: #2a2a2a;
+    transition: .3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+#name {
+    font-size: 2.5em;
+    color: white;
+}
+
+
+/* Estilizando main */
+
+main {
+    padding-top: 120px; /* Ajuste este valor de acordo com a altura do header */
+}
+
+#inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-me h5 {
+    text-align: center;
+    width: 80%;
+}
+
+.img-about-me {
+    border: 2px solid #8c52ff;
+    border-radius: 50%;
+}
+
+#habilidades {
+
+}
+
+#projetos {
+
+}
+
+#feedbacks {
+
+}
+
+#contato {
+
+}
+
+footer {
+    border: 1px solid yellow;
+}
