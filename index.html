@@ -5,6 +5,9 @@
         <title>Matheus de Alencar</title>
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- JQUERY -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
         <!-- CSS Personalizado -->
         <link rel="stylesheet" href="css/style.css">
         <style>
@@ -16,6 +19,9 @@
             }
             footer {
                 border: 1px solid yellow;
+            }
+            .slick-slide img {
+                margin: 0 auto;
             }
         </style>
     </head>
@@ -43,51 +49,29 @@
         </header>
         <main>
             <div id="inicio">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item">
-                        <div class="about-me">
-                            <img src="" class="img-about-me">
-                            <h5>Olá! Eu sou o Matheus. Desenvolvedor, hacker ético e produtor de conteúdo!</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="about-me">
-                            <img src="img/Matheus.png" class="img-about-me">
-                            <h5>Desenvolvedor Full-Stack com experiência comprovada.</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="about-me">
-                            <img src="" class="img-about-me">
-                            <h5>Tenho experiência com Python e sua versatilidade!</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item active">
-                        <div class="about-me">
-                            <img src="" class="img-about-me">
-                            <h5>Prática com integrações e criações de bancos de dados.</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="about-me">
-                            <img src="" class="img-about-me">
-                            <h5>Prática em Segurança da Informação e mitigação de riscos.</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="about-me">
-                            <img src="" class="img-about-me">
-                            <h5>Produtor de conteúdo audiovisual!</h5>
-                        </div>
-                      </div>
+                <div class="carousel">
+                    <div>
+                        <img src="img/Matheus.png" alt="Matheus" class="img-about-me">
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
+                    <div>
+                        <img src="img/Fetin.png" alt="Fetin" class="img-about-me">
+                    </div>
+                    <div>
+                        <img src="img/Engenharia.png" alt="Engenharia" class="img-about-me">
+                    </div>
+                    <div>
+                        <img src="img/Matheus.png" alt="Matheus" class="img-about-me">
+                    </div>
+                    <div>
+                        <img src="img/Fetin.png" alt="Fetin" class="img-about-me">
+                    </div>
+                    <div>
+                        <img src="img/Engenharia.png" alt="Engenharia" class="img-about-me">
+                    </div>
+                </div>
+                <div class="txt-about-me">
+                    <h2>Olá, eu sou o Matheus!</h2>
+                    <h3></h3>
                 </div>
             </div>
             <div id="habilidades">
@@ -107,8 +91,36 @@
             Rodapé
         </footer>
         <script src="js/main.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            $('.carousel').slick({
+                centerMode: true,
+                centerPadding: '0px',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 3,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+                });
+        </script>
     </body>
 </html>

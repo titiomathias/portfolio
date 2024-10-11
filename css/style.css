@@ -4,6 +4,7 @@ body#body {
     background-color: #2a2a2a;
     color: white;
     font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -54,6 +55,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .about-me {
@@ -65,6 +68,10 @@ main {
     gap: 12px;
 }
 
+.carousel {
+    width: 100%;
+}
+
 .about-me h5 {
     text-align: center;
     width: 80%;
@@ -73,6 +80,71 @@ main {
 .img-about-me {
     border: 2px solid #8c52ff;
     border-radius: 50%;
+    width: 250px;
+}
+
+.txt-about-me {
+    text-align: center;
+    position: relative;
+    margin: 1em;
+    font-style: italic;
+}
+
+.txt-about-me h3, h2 {
+    font-weight: 100;
+}
+
+.txt-about-me h3::before {
+    content: "";
+    animation: palavras 35s infinite;
+}
+
+.txt-about-me h3::after {
+    content: "";
+    position: absolute;
+    height: 40%;
+    border-left: 2px solid white;
+    right: -10px;
+    animation: cursor 1s infinite, digita 35s steps(25) infinite;
+    width: calc(100% + 11px);
+    background-color: #2a2a2a;
+}
+
+@keyframes digita {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 11px);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid #2a2a2a;
+    }
+}
+
+@keyframes palavras {
+    0%, 20% {
+        content: "Desenvolvedor Full Stack com experiência sólida.";
+    }
+    21%, 40% {
+        content: "Especialista em automação e APIs com Python.";
+    }
+    41%, 60% {
+        content: "Freelancer com projetos comprovados.";
+    }
+    61%, 80% {
+        content: "Investigação digital e segurança cibernética.";
+    }
+    81%, 100% {
+        content: "Criador de conteúdo e empreendedor.";
+    }
+}
+
+.carousel-item {
+    transition: transform 2s ease-in-out !important;
 }
 
 #habilidades {
