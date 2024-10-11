@@ -11,15 +11,6 @@
         <!-- CSS Personalizado -->
         <link rel="stylesheet" href="css/style.css">
         <style>
-            header {
-                border: 1px solid black;
-            }
-            main {
-                border: 1px solid red;
-            }
-            footer {
-                border: 1px solid yellow;
-            }
             .slick-slide img {
                 margin: 0 auto;
             }
@@ -49,25 +40,8 @@
         </header>
         <main>
             <div id="inicio">
-                <div class="carousel">
-                    <div>
-                        <img src="img/Matheus.png" alt="Matheus" class="img-about-me">
-                    </div>
-                    <div>
-                        <img src="img/Fetin.png" alt="Fetin" class="img-about-me">
-                    </div>
-                    <div>
-                        <img src="img/Engenharia.png" alt="Engenharia" class="img-about-me">
-                    </div>
-                    <div>
-                        <img src="img/Matheus.png" alt="Matheus" class="img-about-me">
-                    </div>
-                    <div>
-                        <img src="img/Fetin.png" alt="Fetin" class="img-about-me">
-                    </div>
-                    <div>
-                        <img src="img/Engenharia.png" alt="Engenharia" class="img-about-me">
-                    </div>
+                <div class="img-about-me">
+                    <img src="img/Engenharia.png" alt="Engenharia" class="img-about-me">
                 </div>
                 <div class="txt-about-me">
                     <h2>Olá, eu sou o Matheus!</h2>
@@ -75,7 +49,46 @@
                 </div>
             </div>
             <div id="habilidades">
-                <h1>Habilidades</h1>
+                <div class="skills-select">
+                    <h2>HARD SKILLS</h2>
+                    <h2>SOFT SKILLS</h2>
+                </div>
+                <div class="hardskills">
+                    <div class="carousel">
+                        <div class="skill-container">
+                            <div class="skill-bar html">
+                                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" width="100px">
+                            </div>
+                        </div>
+                        
+                        <div class="skill-container">
+                            <div class="skill-bar css">
+                                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" alt="CSS3" width="100px">
+                            </div>
+                        </div>
+                        
+                        <div class="skill-container">
+                            <div class="skill-bar js">
+                                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JavaScript" width="100px">
+                            </div>
+                        </div>
+                        
+                        <div class="skill-container">
+                            <div class="skill-bar python">
+                                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png" alt="python" width="100px">
+                            </div>
+                        </div>
+                        
+                        <div class="skill-container">
+                            <div class="skill-bar php">
+                                <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/php/php.png" alt="PHP" width="100px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="softskills">
+
+                </div>
             </div>
             <div id="projetos">
                 <h1>Projetos</h1>
@@ -98,7 +111,7 @@
                 centerMode: true,
                 centerPadding: '0px',
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1500,
                 slidesToShow: 3,
                 responsive: [
                     {

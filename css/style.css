@@ -46,8 +46,9 @@ header {
 
 /* Estilizando main */
 
-main {
-    padding-top: 120px;
+main #inicio, #habilidades, #projetos, #feedbacks, #contatos{
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #inicio {
@@ -148,7 +149,23 @@ main {
 }
 
 #habilidades {
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.skills-select {
+    padding: 0% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hardskills {
+    width: 100%;
 }
 
 #projetos {
