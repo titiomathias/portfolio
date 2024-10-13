@@ -46,12 +46,12 @@ header {
 
 /* Estilizando main */
 
-main #inicio, #habilidades, #projetos, #feedbacks, #contatos{
+main #inicio, #habilidades, #projetos, #feedbacks, #contato{
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-#inicio {
+#inicio, #habilidades, #projetos, #feedbacks, #contato {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -148,36 +148,53 @@ main #inicio, #habilidades, #projetos, #feedbacks, #contatos{
     transition: transform 2s ease-in-out !important;
 }
 
-#habilidades {
-    width: 100%;
-    background-color: white;
-    color: black;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .skills-select {
-    padding: 0% 10%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
 }
 
 .hardskills {
-    width: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
 }
 
-#projetos {
-
+.hardskill-button:hover {
+    text-shadow: 0 0 0.1em rgb(255, 255, 255);
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
-#feedbacks {
-
+.softskill-button:hover {
+    text-shadow: 0 0 0.1em rgb(255, 255, 255);
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
 
-#contato {
+#categorias {
+    margin-top: 2em;
+    width: 90%;
+}
 
+#categorias ul {
+    list-style: none;
+}
+
+#categorias ul li {
+    font-size: larger;
+    list-style: none;
+    flex-grow: 2; /* Faz os itens ocuparem espaço proporcionalmente */
+    text-align: center; /* Opcional, centraliza o texto dentro do li */
+    padding: 10px;
+}
+
+.list-categorias {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
