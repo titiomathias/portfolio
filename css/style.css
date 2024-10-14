@@ -197,6 +197,77 @@ main #inicio, #habilidades, #projetos, #feedbacks, #contato{
     justify-content: space-between;
 }
 
+#cards {
+    width: 90%;
+}
+
+.card-group {
+    gap: 18px;
+}
+
+#comentarios {
+    width: 90%;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 8px;
+    gap: 8px;
+}
+
+.comment-img {
+    width: 5%;
+    border: 2px solid rgb(227, 227, 227);
+    border-radius: 50%;
+}
+
+.comment-name {
+    font-size: 1.15rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.data {
+    font-size: 0.75rem;
+    display: inline-block;
+}
+
+.user-content {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.comment-content {
+    width: 100%;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+#contact-buttons {
+    margin-top: 2em;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
 footer {
     border: 1px solid yellow;
 }
