@@ -154,7 +154,7 @@ main #inicio, #habilidades, #projetos, #feedbacks, #contato{
     justify-content: space-between;
 }
 
-.hardskills {
+#hardskills, #softskills {
     width: 90%;
     display: flex;
     align-items: center;
@@ -163,13 +163,21 @@ main #inicio, #habilidades, #projetos, #feedbacks, #contato{
     border-radius: 20px;
 }
 
-.hardskill-button:hover {
+#hardskills {
+    display: flex;
+}
+
+#softskills {
+    display: none;
+}
+
+#hardskill-button:hover {
     text-shadow: 0 0 0.1em rgb(255, 255, 255);
     cursor: pointer;
     transition-duration: 0.2s;
 }
 
-.softskill-button:hover {
+#softskill-button:hover {
     text-shadow: 0 0 0.1em rgb(255, 255, 255);
     cursor: pointer;
     transition-duration: 0.2s;
