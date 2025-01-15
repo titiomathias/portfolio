@@ -12,4 +12,4 @@
 
 <h3>For the future:</h3>
 
-<p>I will work in a API to connect to my <a>99freelas account</a> and get all reviews about me to show on my portfolio. Probably will use FastAPI.</p>
+<p>I will work in a API to connect to my <a href="https://www.99freelas.com.br/user/tio-mathias">99freelas account</a> and get all reviews about me to show on my portfolio. Probably will use FastAPI.</p>
