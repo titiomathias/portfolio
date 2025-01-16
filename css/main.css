@@ -114,6 +114,41 @@ span {
     text-align: justify;
 }
 
+.language {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+    background-color: var(--bg-color-01);
+    border-radius: 0.6rem;
+}
+
+.language a {
+    display: block;
+    padding: 0.5rem;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: 0.4s ease;
+}
+
+.dropdown:hover {
+    color: var(--main-color);
+}
+
+.dropdown:hover .language {
+    display: block;
+}
+
 .social-media img {
     width: 3.5rem;
 }
@@ -447,9 +482,14 @@ footer {
     }
 }
 
+@media (max-width: 886px) {
+    .language {
+        text-align: left; 
+    }
+}
 
 /* Medium */
-@media (min-width: 768px) {
+@media (min-width: 886px) {
     .menu-hamburguer {
         display: none;
     }

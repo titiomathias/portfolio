@@ -11,6 +11,7 @@ function toggleMenu() {
     }
 }
 
+
 const menuHamburguer = document.querySelector('.menu-hamburguer');
 
 menuHamburguer.addEventListener('click', () => {
@@ -27,23 +28,30 @@ document.addEventListener("DOMContentLoaded", () => {
             const servicesBox = button.closest(".services-box");
             const paragraph = servicesBox.querySelector("p");
 
-            // Verifica o estado atual usando um atributo de dados
             const isExpanded = paragraph.getAttribute("data-expanded") === "true";
 
             if (isExpanded) {
-                // Recolher texto
                 paragraph.style.display = "-webkit-box";
                 paragraph.style.overflow = "hidden";
                 paragraph.style.textOverflow = "ellipsis";
                 paragraph.setAttribute("data-expanded", "false");
-                button.textContent = "Read more";
+
+                if (button.textContent === "Read less") {
+                    button.textContent = "Read more";
+                } else {
+                    button.textContent = "Saiba mais";
+                }
             } else {
-                // Expandir texto
                 paragraph.style.display = "block";
                 paragraph.style.overflow = "visible";
                 paragraph.style.textOverflow = "unset";
                 paragraph.setAttribute("data-expanded", "true");
-                button.textContent = "Read less";
+                
+                if (button.textContent === "Read more") {
+                    button.textContent = "Read less";
+                } else {
+                    button.textContent = "Saiba menos";
+                }
             }
         });
     });
