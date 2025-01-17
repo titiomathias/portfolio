@@ -11,7 +11,6 @@ function toggleMenu() {
     }
 }
 
-
 const menuHamburguer = document.querySelector('.menu-hamburguer');
 
 menuHamburguer.addEventListener('click', () => {
@@ -21,10 +20,25 @@ menuHamburguer.addEventListener('click', () => {
 /* Read More Event */
 document.addEventListener("DOMContentLoaded", () => {
     const readMoreButtons = document.querySelectorAll(".services-box .btn");
+    
+    const dropdowns = document.querySelectorAll(".nav-responsive .dropdown");
 
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener("click", () => {
+
+            const languages = dropdown.querySelector(".language");
+            
+            if (languages.style.display === "block") {
+                languages.style.display = "none";
+            } else {
+                languages.style.display = "block";
+            }
+        });
+    });
+    
     readMoreButtons.forEach((button) => {
         button.addEventListener("click", (event) => {
-            event.preventDefault(); // Previne comportamento padrão do link
+            event.preventDefault();
             const servicesBox = button.closest(".services-box");
             const paragraph = servicesBox.querySelector("p");
 
