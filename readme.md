@@ -8,6 +8,7 @@
 
 <p>
     Anyone can access the result in my published site -> <a href="https://matheusdealencar.com" target="__blank">Click Here</a>.
+    Now available in English and Portuguese.
 </p>
 
 <h3>For the future:</h3>
