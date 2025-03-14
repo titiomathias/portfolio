@@ -310,6 +310,80 @@ span {
     color: var(--bg-color-01);
 }
 
+.feedbacks {
+    margin-top: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.feedbacks h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.319);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.prev {
+    left: -20px;
+}
+
+.next {
+    right: -20px;
+}
+
+.comment-container {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: 1.5;
+    max-height: calc(1.5em * 3);
+}
+
+.comment-container.expanded {
+    -webkit-line-clamp: unset;
+    max-height: none;
+}
+
+#result article { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.feedback-title {
+    color: var(--main-color);
+}
+
+.feedback-title:hover {
+    color: var(--main-color-dark);
+}
+
 form {
     max-width: 45rem;
     margin: 0.6rem auto;
