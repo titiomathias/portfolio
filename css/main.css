@@ -310,6 +310,38 @@ span {
     color: var(--bg-color-01);
 }
 
+.feedbacks {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.feedbacks h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+#result article { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.feedback-title {
+    color: var(--main-color);
+}
+
+.feedback-title:hover {
+    color: var(--main-color-dark);
+}
+
 form {
     max-width: 45rem;
     margin: 0.6rem auto;
