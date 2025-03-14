@@ -11,6 +11,6 @@
     Now available in English and Portuguese.
 </p>
 
-<h3>For the future:</h3>
+<h3>Resources: Getting Reviews With Python</h3>
 
-<p>I will work in a API to connect to my <a href="https://www.99freelas.com.br/user/tio-mathias">99freelas account</a> and get all reviews about me to show on my portfolio. Probably will use FastAPI.</p>
+<p>An API made with FastAPI to get <a href="https://www.99freelas.com.br/user/tio-mathias">99freelas profile</a> reviews about me to show the same on my portfolio. Look at the project <a href="https://github.com/titiomathias/99reviews">here</a>!</p>
