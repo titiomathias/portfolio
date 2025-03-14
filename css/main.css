@@ -369,6 +369,11 @@ span {
     max-height: none;
 }
 
+.comment {
+    font-weight: 300;
+    font-style: italic;
+}
+
 #result article { 
     display: flex;
     align-items: center;
