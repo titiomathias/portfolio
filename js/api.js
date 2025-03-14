@@ -1,4 +1,4 @@
-const url = "http://localhost:8080/reviews";
+const url = "https://99reviews.discloud.app/reviews";
 
 axios.get(url).then(function (response) {
     if (Array.isArray(response.data)) {
@@ -9,7 +9,9 @@ axios.get(url).then(function (response) {
             `
             <article class='feedback c-carousel__slide'>
                 <a href="${item.link}" target="_blank" class="feedback-title"><h3>${item.title}</h3></a>
-                <p class='comment'>${item.comment}</p>
+                <div class="comment-container">
+                    <p class='comment'>${item.comment}</p>
+                </div>
             </article>
             `;
         });
@@ -27,6 +29,11 @@ axios.get(url).then(function (response) {
                     prev: "#glider-prev",
                     next: "#glider-next",
                 },
+                rewind: true,
+                duration: 0.2,
+                ease: "ease-in-out",
+                scrollLock: true,
+                scrollLockDelay: 0,
             });
         } else {
             console.error("Elemento .js-carousel--simple não encontrado.");
