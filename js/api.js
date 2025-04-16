@@ -1,6 +1,9 @@
 const url = "https://99reviews.discloud.app/reviews";
 
 axios.get(url, {
+    headers: {
+        Host: "matheusdealencar.com"
+    },
     withCredentials: false
 }).then(function (response) {
     if (Array.isArray(response.data)) {
