@@ -1,6 +1,10 @@
 const url = "https://99reviews.discloud.app/reviews";
 
-axios.get(url).then(function (response) {
+axios.get(url, {
+    headers: {
+        'Origin': 'https://matheusdealencar.com' // Substitua pelo seu domínio real
+    }
+    }).then(function (response) {
     if (Array.isArray(response.data)) {
         let content = ""; 
 
