@@ -1,10 +1,8 @@
 const url = "https://99reviews.discloud.app/reviews";
 
 axios.get(url, {
-    headers: {
-        'Origin': 'https://matheusdealencar.com'
-    }
-    }).then(function (response) {
+    withCredentials: false
+}).then(function (response) {
     if (Array.isArray(response.data)) {
         let content = ""; 
 
@@ -47,4 +45,8 @@ axios.get(url, {
     }
 }).catch(function (error) {
     console.error("Erro:", error)
+    if (error.response){
+        console.error("Status:", error.response.status);
+        console.error("Headers:", error.response.headers);
+    }
 });
