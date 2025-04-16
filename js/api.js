@@ -1,6 +1,12 @@
 const url = "https://99reviews.discloud.app/reviews";
 
-axios.get(url).then(function (response) {
+axios.get(url, {
+    withCredentials: false,
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+    }
+}).then(function (response) {
     if (Array.isArray(response.data)) {
         let content = ""; 
 
