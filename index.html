@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta name="description" content="Discover the portfolio of Matheus de Alencar, a Full-Stack Developer and Software Engineer. Explore projects in web development, APIs, UX/UI design, and more. Let's build something amazing together!">
         <meta name="author" content="Matheus de Alencar">
-        <meta property="og:title" content="Matheus de Alencar - Full-Stack Developer and Software Engineer">
-        <meta property="og:description" content="Explore projects in web development, APIs, UX/UI design, and more. Let's build something amazing together!">
+        <meta property="og:title" content="Matheus de Alencar - Ethical Hacker, Full-Stack Developer and Software Engineer">
+        <meta property="og:description" content="Explore projects in web development, APIs, UX/UI design, Pentest and more. Let's build something amazing together!">
         <meta property="og:image" content="https://matheusdealencar.com.br/img/Matheus.png">
         <meta property="og:url" content="https://matheusdealencar.com.br/">
         <meta property="og:type" content="website">        
@@ -67,7 +67,11 @@
             <div class="home-content">
                 <h3>Hello! I'm</h3>
                 <h1>Matheus</h1>
-                <h3>Full-Stack <span>Developer</span> and <span>Ethical Hacker</span></h3>
+                <h3 class="role-line">
+                    <span class="role-prefix">// </span>
+                    <span id="role-text"></span>
+                    <span class="cursor-blink">_</span>
+                </h3>
 
                 <p>Full-Stack Developer, Ethical Hacker, Computer Tech at Instituto Federal do Sul de Minas and Software Engineer graduating at Inatel.</p>
 
@@ -95,79 +99,42 @@
 
                 <div class="services-container">
                     <div class="services-box">
-                        <i class='bx bx-code-alt'></i>
-                    
-                        <h3>Web Development</h3>
-                        
+                        <i class='bx bx-shield-x'></i>
+
+                        <h3>Pentest & Security</h3>
+
                         <p>
-                            Creation of responsive, modern, and user-friendly websites tailored to your business needs. Specialized in front-end and back-end, ensuring impeccable functionality and design.<br><br><code>HTML, CSS, Javascript, PHP, React and Django.</code>
+                            End-to-end penetration testing and vulnerability assessments for web applications, APIs, and networks.<br/><br/>I identify attack vectors before malicious actors do, delivering detailed technical reports with remediation guidance aligned to OWASP standards.<br/><br/>Available for one-off engagements and ongoing security consulting.<br><br><code>OWASP, PTES, Hardening</code>
                         </p>
-                    
+
                         <a href="#" class="btn">Read more</a>
                     </div>
-                    
+
                     <div class="services-box">
-                        <i class='bx bx-code-curly'></i>
-                    
-                        <h3>Desktop Development</h3>
-                        
+                        <i class='bx bx-terminal'></i>
+
+                        <h3>Software Engineering</h3>
+
                         <p>
-                            Development of custom desktop applications that optimize workflows, improve efficiency, and meet your specific requirements.<br><br><code>Python, PHP, and Electron</code>
+                            Full-stack development and software architecture from the ground up.<br/><br/>I design and build responsive web applications, REST and async APIs, desktop tools, and data pipelines — with security considerations baked in from day one.<br/><br/>Focused on clean architecture, scalability, and maintainability.<br><br><code>Python, JavaScript, React, Django, FastAPI, Spring Boot, SQL</code>
                         </p>
-                    
+
                         <a href="#" class="btn">Read more</a>
                     </div>
-                    
+
                     <div class="services-box">
-                        <i class='bx bx-data'></i>
-                    
-                        <h3>Data Science</h3>
-                        
+                        <i class='bx bx-chalkboard'></i>
+
+                        <h3>Education & Training</h3>
+
                         <p>
-                            Using data to generate insights and strategies. I offer data analysis and visualization to support informed decision-making.<br><br><code>Python and SQL</code>
+                            Cybersecurity workshops, hands-on training sessions, and talks tailored for development teams, IT departments, and academic institutions.<br/><br/>Topics include ethical hacking fundamentals, secure coding practices, OWASP Top 10, and social engineering awareness.<br/><br/>Knowledge is power.<br><br><code>Workshops, Talks, Secure Coding, OWASP Top 10</code>
                         </p>
-                    
+
                         <a href="#" class="btn">Read more</a>
                     </div>
                 </div>
-                <div class="services-container">
-                    <div class="services-box">
-                        <i class='bx bx-user'></i>
-                
-                        <h3>UX/UI Design</h3>
-                        
-                        <p>
-                            Creation of intuitive and visually appealing interfaces that enhance user experience and align with your brand identity.<br><br><code>Figma and Canva</code>
-                        </p>
-                
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                
-                    <div class="services-box">
-                        <i class='bx bx-code-block'></i>
-                
-                        <h3>API Development</h3>
-                        
-                        <p>
-                            Building robust and scalable APIs that reliably and securely integrate your applications and third-party services.<br><br><code>FastAPI, Django, Flask and Spring Boot</code>
-                        </p>
-                
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                
-                    <div class="services-box">
-                        <i class='bx bx-check-shield'></i>
-                
-                        <h3>Information Security</h3>
-                        
-                        <p>
-                            Implementation of cybersecurity practices to protect your web systems against threats and vulnerabilities. Penetration testing and continuous monitoring to ensure the integrity, confidentiality, and availability of your data.<br><br><code>OWASP, Pentest and Vulnerability Analysis</code>
-                        </p>
-                
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-                
+
             </section>
         <!-- /services section -->
 
@@ -275,38 +242,53 @@
             <section class="contact" id="contact">
                 <h2><span>Contact</span> Me</h2>
 
-                <div class="form">
-                    <form action="https://formsubmit.co/contato@matheusdealencar.com" method="post">
-                        <input type="hidden" name="_captcha" value="false">
+                <p class="contact-intro">
+                    Interested in a pentest engagement, a web project, or just want to chat?<br>
+                    Pick your preferred channel below.
+                </p>
 
-                        <div class="input-box">
-                            <input type="text" name="name" id="full-name" placeholder="Full Name" minlength="6" maxlength="50" required>
+                <div class="contact-cards">
+
+                    <a href="https://api.whatsapp.com/send?phone=553599028383&text=Ol%C3%A1%2C%20Matheus!%20Tudo%20bem%3F"
+                       target="_blank" class="contact-card contact-card--whatsapp">
+                        <div class="contact-card__icon"><i class='bx bxl-whatsapp'></i></div>
+                        <div class="contact-card__body">
+                            <span class="contact-card__label">// WhatsApp</span>
+                            <h3>Chat Now</h3>
+                            <p>Fastest response. Available for quick questions and project scoping.</p>
                         </div>
-                        
-                        <div class="input-box-shared">
-                            <input type="text" name="phone" id="phone-number" placeholder="Phone Number" data-mask="(00) 00000-0000" required>            
-                            <input type="email" name="email" id="email" placeholder="E-mail"  minlength="6" maxlength="50" required>
+                        <i class='bx bx-chevron-right contact-card__arrow'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/matheus-de-alencar-455b2033b/"
+                       target="_blank" class="contact-card contact-card--linkedin">
+                        <div class="contact-card__icon"><i class='bx bxl-linkedin'></i></div>
+                        <div class="contact-card__body">
+                            <span class="contact-card__label">// LinkedIn</span>
+                            <h3>Connect</h3>
+                            <p>For professional networking, proposals, or pentest scope documents.</p>
                         </div>
+                        <i class='bx bx-chevron-right contact-card__arrow'></i>
+                    </a>
 
-                        <div class="input-box">
-                            <input type="text" name="subject" id="subject" placeholder="Subject"  minlength="1" maxlength="50" required>
+                    <a href="mailto:contato@matheusdealencar.com"
+                       class="contact-card contact-card--email">
+                        <div class="contact-card__icon"><i class='bx bx-envelope'></i></div>
+                        <div class="contact-card__body">
+                            <span class="contact-card__label">// Email</span>
+                            <h3>Send an Email</h3>
+                            <p>For formal proposals, NDAs, or pentest scope documents.</p>
                         </div>
+                        <i class='bx bx-chevron-right contact-card__arrow'></i>
+                    </a>
 
-                        <textarea cols="30" rows="10" name="message" id="message" placeholder="Message..."  minlength="1" maxlength="1000" required></textarea>
-
-                        <input type="hidden" name="_next" value="https://matheusdealencar.com/thankyou.html">
-
-                        <button class="btn">Send Message</button>
-                    </form>
                 </div>
             </section>
         <!-- /contact section -->
 
         <footer>
-            <p>Copyright &copy; 2025 by Matheus de Alencar. All Rights Reserved.</p>
+            <p>Copyright &copy; 2026 by Matheus de Alencar. All Rights Reserved.</p>
         </footer>
     </body>
     <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="jquery/jquery.mask.min.js"></script>
 </html>
