@@ -66,7 +66,11 @@
             <div class="home-content">
                 <h3>Olá! Eu sou</h3>
                 <h1>Matheus</h1>
-                <h3><span>Desenvolvedor</span> e <span>Hacker Ético</span></h3>
+                <h3 class="role-line">
+                    <span class="role-prefix">// </span>
+                    <span id="role-text"></span>
+                    <span class="cursor-blink">_</span>
+                </h3>
 
                 <p>Desenvolvedor Full-Stack, Hacker Ético, Técnico em Informática pelo Instituto Federal do Sul de Minas e graduando no 7º período em Engenharia de Software no Inatel.</p>
 
@@ -94,79 +98,42 @@
 
                 <div class="services-container">
                     <div class="services-box">
-                        <i class='bx bx-code-alt'></i>
-                
-                        <h3>Desenvolvimento Web</h3>
-                        
+                        <i class='bx bx-shield-x'></i>
+
+                        <h3>Pentest & Segurança</h3>
+
                         <p>
-                            Criação de sites responsivos, modernos e fáceis de usar, adaptados às necessidades do seu negócio. Especializado em front-end e back-end, garantindo funcionalidade e design impecáveis.<br><br><code>HTML, CSS, Javascript, PHP, React e Django.</code>
+                            Testes de penetração e análise de vulnerabilidades end-to-end em aplicações web, APIs e redes.<br/><br/>Identifico vetores de ataque antes que agentes maliciosos o façam, entregando relatórios técnicos detalhados com orientações de correção alinhadas ao padrão OWASP.<br/><br/>Disponível para engajamentos pontuais e consultoria contínua de segurança.<br><br><code>OWASP, PTES, Hardening/code>
                         </p>
-                
+
                         <a href="#" class="btn">Saiba mais</a>
                     </div>
-                
+
                     <div class="services-box">
-                        <i class='bx bx-code-curly'></i>
-                
-                        <h3>Desenvolvimento Desktop</h3>
-                        
+                        <i class='bx bx-terminal'></i>
+
+                        <h3>Engenharia de Software</h3>
+
                         <p>
-                            Desenvolvimento de aplicativos desktop personalizados que otimizam fluxos de trabalho, melhoram a eficiência e atendem aos seus requisitos específicos.<br><br><code>Python, PHP e Electron</code>
+                            Desenvolvimento full-stack e arquitetura de software do zero.<br/><br/>Projeto e construo aplicações web responsivas, APIs REST e assíncronas, ferramentas desktop e pipelines de dados — com segurança incorporada desde o primeiro dia.<br/><br/>Foco em arquitetura limpa, escalabilidade e manutenibilidade.<br><br><code>Python, JavaScript, React, Django, FastAPI, Spring Boot, SQL</code>
                         </p>
-                
+
                         <a href="#" class="btn">Saiba mais</a>
                     </div>
-                
+
                     <div class="services-box">
-                        <i class='bx bx-data'></i>
-                
-                        <h3>Ciência de Dados</h3>
-                        
+                        <i class='bx bx-chalkboard'></i>
+
+                        <h3>Educação e Treinamento</h3>
+
                         <p>
-                            Uso de dados para gerar insights e estratégias. Ofereço análises e visualizações de dados para ajudar na tomada de decisões informadas.<br><br><code>Python e SQL</code>
+                            Workshops, treinamentos práticos e palestras sobre cibersegurança para equipes de desenvolvimento, departamentos de TI e instituições acadêmicas.<br/><br/>Temas incluem fundamentos de hacking ético, práticas de codificação segura, OWASP Top 10 e conscientização sobre engenharia social.<br/><br/>Conhecimento é poder.<br><br><code>Workshops, Palestras, Codificação Segura, OWASP Top 10</code>
                         </p>
-                
+
                         <a href="#" class="btn">Saiba mais</a>
                     </div>
                 </div>
-                <div class="services-container">
-                    <div class="services-box">
-                        <i class='bx bx-user'></i>
-                
-                        <h3>Design UX/UI</h3>
-                        
-                        <p>
-                            Criação de interfaces intuitivas e visualmente atraentes que melhoram a experiência do usuário e se alinham à identidade da sua marca.<br><br><code>Figma e Canva</code>
-                        </p>
-                
-                        <a href="#" class="btn">Saiba mais</a>
-                    </div>
-                
-                    <div class="services-box">
-                        <i class='bx bx-code-block'></i>
-                
-                        <h3>Desenvolvimento de API</h3>
-                        
-                        <p>
-                            Construção de APIs robustas e escaláveis que integram seus aplicativos e serviços de terceiros de maneira confiável e segura.<br><br><code>FastAPI, Django, Flask e Spring Boot</code>
-                        </p>
-                
-                        <a href="#" class="btn">Saiba mais</a>
-                    </div>
-                
-                    <div class="services-box">
-                        <i class='bx bx-check-shield'></i>
-                
-                        <h3>Segurança da Informação</h3>
-                        
-                        <p>
-                            Implementação de práticas de segurança cibernética para proteger seus sistemas web contra ameaças e vulnerabilidades. Testes de penetração e monitoramento contínuo para garantir a integridade, confidencialidade e disponibilidade dos seus dados.<br><br><code>OWASP, Pentest, Análise de Vulnerabilidades</code>
-                        </p>
-                
-                        <a href="#" class="btn">Saiba mais</a>
-                    </div>
-                </div>
-                
+
             </section>
         <!-- /seção serviços -->
 
@@ -274,29 +241,46 @@
             <section class="contact" id="contact">
                 <h2>Entre em <span>Contato</span></h2>
 
-                <div class="form">
-                    <form action="https://formsubmit.co/contato@matheusdealencar.com" method="post">
-                        <input type="hidden" name="_captcha" value="false">
+                <p class="contact-intro">
+                    Interessado em um teste de penetração, um projeto web ou só quer bater um papo?<br>
+                    Escolha o canal de sua preferência abaixo.
+                </p>
 
-                        <div class="input-box">
-                            <input type="text" name="name" id="full-name" placeholder="Nome Completo" minlength="6" maxlength="50" required>
+                <div class="contact-cards">
+
+                    <a href="https://api.whatsapp.com/send?phone=553599028383&text=Ol%C3%A1%2C%20Matheus!%20Tudo%20bem%3F"
+                       target="_blank" class="contact-card contact-card--whatsapp">
+                        <div class="contact-card__icon"><i class='bx bxl-whatsapp'></i></div>
+                        <div class="contact-card__body">
+                            <span class="contact-card__label">// WhatsApp</span>
+                            <h3>Chamar no WhatsApp</h3>
+                            <p>Resposta mais rápida. Disponível para perguntas rápidas e escopo de projetos.</p>
                         </div>
-                        
-                        <div class="input-box-shared">
-                            <input type="text" name="phone" id="phone-number" placeholder="Telefone" data-mask="(00) 00000-0000" required>            
-                            <input type="email" name="email" id="email" placeholder="E-mail"  minlength="6" maxlength="50" required>
+                        <i class='bx bx-chevron-right contact-card__arrow'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/matheus-de-alencar-455b2033b/"
+                       target="_blank" class="contact-card contact-card--linkedin">
+                        <div class="contact-card__icon"><i class='bx bxl-linkedin'></i></div>
+                        <div class="contact-card__body">
+                            <span class="contact-card__label">// LinkedIn</span>
+                            <h3>Conectar</h3>
+                            <p>Para networking profissional, propostas ou documentos de escopo de pentest.</p>
                         </div>
+                        <i class='bx bx-chevron-right contact-card__arrow'></i>
+                    </a>
 
-                        <div class="input-box">
-                            <input type="text" name="subject" id="subject" placeholder="Assunto"  minlength="1" maxlength="50" required>
+                    <a href="mailto:contato@matheusdealencar.com"
+                       class="contact-card contact-card--email">
+                        <div class="contact-card__icon"><i class='bx bx-envelope'></i></div>
+                        <div class="contact-card__body">
+                            <span class="contact-card__label">// Email</span>
+                            <h3>Enviar E-mail</h3>
+                            <p>Para propostas formais, NDAs ou documentos de escopo de pentest.</p>
                         </div>
+                        <i class='bx bx-chevron-right contact-card__arrow'></i>
+                    </a>
 
-                        <textarea cols="30" rows="10" name="message" id="message" placeholder="Mensagem..."  minlength="1" maxlength="1000" required></textarea>
-
-                        <input type="hidden" name="_next" value="https://matheusdealencar.com/pt/thankyou.html">
-
-                        <button class="btn">Enviar Mensagem</button>
-                    </form>
                 </div>
             </section>
         <!-- /seção contato -->
@@ -306,6 +290,4 @@
         </footer>
     </body>
     <script src="../js/main.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="../jquery/jquery.mask.min.js"></script>
 </html>
